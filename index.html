@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush Dubey — Full-Stack Developer</title>
+<meta name="description" content="Ayush Dubey — MCA student, full-stack developer. React, FastAPI, MySQL, applied NLP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="nav">
+  <span class="nav__brand">ayush<span class="cursor-blink">_</span></span>
+  <div class="nav__links">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__text">
+    <p class="eyebrow">// full-stack developer &amp; MCA student</p>
+    <h1 class="hero__name">Ayush<br>Dubey</h1>
+    <p class="hero__sub">I build things that talk to each other — React on top, FastAPI underneath, and occasionally an LLM that has to earn the right to speak.</p>
+    <div class="hero__cta">
+      <a href="#work" class="btn btn--primary">see the work</a>
+      <a href="mailto:dubeyayushkbe@gmail.com" class="btn btn--ghost">say hi</a>
+    </div>
+  </div>
+
+  <div class="hero__side">
+    <div class="photo-frame">
+      <img src="assets/photo.jpg" alt="Ayush Dubey" class="photo">
+    </div>
+    <div class="terminal" id="terminal">
+      <div class="terminal__bar">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="terminal__title">whoami.sh</span>
+      </div>
+      <div class="terminal__body" id="terminal-body"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section" id="stack">
+  <p class="section__label">01 · stack</p>
+  <div class="stack-grid">
+    <div class="stack-group">
+      <h3>languages</h3>
+      <ul><li>Python</li><li>C</li><li>JavaScript</li></ul>
+    </div>
+    <div class="stack-group">
+      <h3>frontend</h3>
+      <ul><li>React</li><li>HTML / CSS</li></ul>
+    </div>
+    <div class="stack-group">
+      <h3>backend</h3>
+      <ul><li>FastAPI</li><li>Pydantic</li><li>REST APIs</li></ul>
+    </div>
+    <div class="stack-group">
+      <h3>data</h3>
+      <ul><li>MySQL</li><li>ChromaDB</li></ul>
+    </div>
+    <div class="stack-group">
+      <h3>applied AI</h3>
+      <ul><li>RAG</li><li>Embeddings</li><li>Groq LLM</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <p class="section__label">02 · work</p>
+
+  <article class="project project--featured">
+    <div class="project__meta">
+      <span class="project__tag">featured · 2026</span>
+      <h2 class="project__title">Awadhi Assistant</h2>
+      <p class="project__desc">A chat assistant for Awadhi, a low-resource language, built around one idea: never let the AI guess when verified data is sitting right there. The backend checks an exact-match knowledge base first, falls back to semantic search over a vector store, and only calls an LLM as a last resort — every answer labeled by where it actually came from.</p>
+      <ul class="project__points">
+        <li>Three-tier response pipeline: exact match → RAG semantic search (ChromaDB + Ollama embeddings) → Groq LLM fallback</li>
+        <li>FastAPI backend with Pydantic-validated endpoints for chat, translation, and literature explanation</li>
+        <li>React frontend with source-transparent UI — verified answers and AI-generated ones are never visually confused</li>
+      </ul>
+      <div class="project__stack">
+        <span>React</span><span>FastAPI</span><span>ChromaDB</span><span>RAG</span><span>Groq</span>
+      </div>
+    </div>
+    <div class="project__visual">
+      <div class="pipeline">
+        <div class="pipeline__step">
+          <span class="pipeline__num">1</span>
+          <span>exact match</span>
+        </div>
+        <div class="pipeline__arrow">↓ miss</div>
+        <div class="pipeline__step">
+          <span class="pipeline__num">2</span>
+          <span>semantic search</span>
+        </div>
+        <div class="pipeline__arrow">↓ miss</div>
+        <div class="pipeline__step pipeline__step--fallback">
+          <span class="pipeline__num">3</span>
+          <span>LLM fallback</span>
+          <em>unverified</em>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="project-row">
+    <article class="project project--small">
+      <span class="project__tag">2023</span>
+      <h3 class="project__title">Portfolio Website</h3>
+      <p class="project__desc">A fully responsive personal site, SEO-optimized from the ground up, with a working contact form for direct outreach.</p>
+      <div class="project__stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </article>
+
+    <article class="project project--small">
+      <span class="project__tag">2022</span>
+      <h3 class="project__title">Student Record Management System</h3>
+      <p class="project__desc">CRUD system managing 200+ student records on a normalized MySQL schema, with query optimization and error handling added during testing.</p>
+      <div class="project__stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <p class="section__label">03 · about</p>
+  <div class="about-grid">
+    <p class="about-text">Currently pursuing an MCA at Kamla Nehru Institute of Technology, Sultanpur (2025–2027). I like the layer where a frontend, a backend, and sometimes a model have to agree on a contract — and I'm more interested in getting that contract right than in shipping something that merely looks finished.</p>
+    <div class="edu-card">
+      <h4>Master of Computer Applications</h4>
+      <p>Kamla Nehru Institute of Technology<br>Sultanpur, India</p>
+      <span class="edu-date">Sep 2025 – Jun 2027</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="section" id="contact">
+  <p class="section__label">04 · contact</p>
+  <h2 class="footer__cta">Let's build something<br>that actually works.</h2>
+  <div class="footer__links">
+    <a href="mailto:dubeyayushkbe@gmail.com">dubeyayushkbe@gmail.com</a>
+    <a href="https://github.com/ayush-dubey-04" target="_blank" rel="noopener">github.com/ayush-dubey-04</a>
+    <a href="https://linkedin.com/in/ayush-dubey-757526273" target="_blank" rel="noopener">linkedin.com/in/ayush-dubey</a>
+  </div>
+  <p class="footer__note">built with html, css &amp; no framework — because sometimes the point is knowing what's under the hood.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
